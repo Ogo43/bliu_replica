@@ -239,7 +239,8 @@
 .rate_training {
   border: 2px solid red;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  align-content: center;
+  grid-template-rows: auto;
   margin: 20px 0px;
 }
 
@@ -265,7 +266,7 @@
 }
 
 .rate_training .percent_1 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   text-align: center;
 }
@@ -277,11 +278,10 @@
 }
 
 .rate_training .process h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   color: #514e4e;
-  width: 400px;
 }
 
 @media only screen and (min-width: 809px) and (max-width: 1280px) {
@@ -357,11 +357,10 @@
   }
 
   .rate_training {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
+    grid-template-columns: auto auto auto;
     gap: 12px;
-    width: 100%;
     margin: 50px 0px 20px;
   }
 
@@ -369,7 +368,8 @@
   .Improve_training,
   .training_increase {
     border: 2px solid green;
-    width: 350.66px;
+    width: 100%;
+    /* width: 80%; */
   }
 
   .rate_training .training_reduction {
@@ -378,6 +378,54 @@
 
   .rate_training .Improve_training {
     margin-bottom: 0px;
+  }
+
+  .rate_training .process {
+    border: 2px solid maroon;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1116px) and (max-width: 1300px) {
+  .rate_training .training_reduction,
+  .Improve_training,
+  .training_increase {
+    border: 2px solid green;
+    width: 377px;
+  }
+
+  .rate_training .process h3 {
+    border: 2px solid maroon;
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 1004px) and (max-width: 1077px) {
+  .rate_training .training_reduction,
+  .Improve_training,
+  .training_increase {
+    border: 2px solid green;
+    width: 322px;
+  }
+
+  .rate_training .process h3 {
+    border: 2px solid maroon;
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 809px) and (max-width: 841px) {
+  .rate_training .training_reduction,
+  .Improve_training,
+  .training_increase {
+    border: 2px solid green;
+    width: 253px;
+    /* width: 80%; */
+  }
+
+  .rate_training .process h3 {
+    border: 2px solid maroon;
+    width: 200px;
   }
 }
 
